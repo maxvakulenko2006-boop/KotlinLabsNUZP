@@ -1,4 +1,5 @@
-fun seed(): String = "your_github_username" // тут впиши свій GitHub-логін
+fun seed(): String = "maxvakulenko2006-boop"
+
 fun labNumber(): Int = 1
 
 fun main(args: Array<String>) {
@@ -13,9 +14,8 @@ fun main(args: Array<String>) {
     val weight: Float = 3.5f
     println("Кошеня №2 - $catName з вагою $weight кг")
 
-    // Новий кіт
-    val kitty3Name: String = "Рудий \uD83D\uDC06"
-    val kitty3Age: Int = 6
-    val kitty3Weight: Double = 8.2
-    println("Кошеня №3 - $kitty3Name віком $kitty3Age років та вагою $kitty3Weight кг")
+    val cat3Name: String = "Рудий \uD83D\uDC06"
+    val cat3Age: Int = 6
+    val cat3Weight: Double = 8.2
+    println("Кошеня №3 - $cat3Name віком $cat3Age років та вагою $cat3Weight кг")
 }
