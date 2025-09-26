@@ -1,7 +1,6 @@
 import org.example.KTests.BuildConfig
 import org.junit.jupiter.api.Test
 import kotlin.test.DefaultAsserter.assertEquals
-import kotlin.test.assertNotEquals
 import kotlin.test.assertTrue
 
 internal class L1Test {
@@ -12,7 +11,7 @@ internal class L1Test {
             1 -> {
                 val buffer = StringBuilder()
                 interceptPrintln(buffer)
-                main(emptyArray())
+                main()
                 assertEquals("Щось не так з третім кошеням", 5, buffer.lines().size)
                 val lastLine = buffer.lines()[3]
                 assertTrue(lastLine.contains("рудий", true), "Нема імені третього кошення")
